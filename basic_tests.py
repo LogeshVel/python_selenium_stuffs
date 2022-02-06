@@ -24,6 +24,15 @@ print('Found the input elements')
 input_ele_1.send_keys(input_1)
 input_ele_2.send_keys(input_2)
 print('Send the input texts')
+
+# selecting the dropdown
+from selenium.webdriver.support.ui import Select
+
+drop_down_css_locator = 'select[name="mySelect"]'
+drop_down_element = Select(browser.find_element(By.CSS_SELECTOR,drop_down_css_locator))
+drop_down_element.select_by_visible_text('Beets')
+print('Selected Beets')
+
 time.sleep(2)
 print("Quitting the browser")
 browser.quit()
