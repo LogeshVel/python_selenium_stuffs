@@ -1,0 +1,5 @@
+To install selenium
+        
+        pip install selenium
+
+And make sure to download the webdriver for corresponding browsers and the os.
